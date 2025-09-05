@@ -11,6 +11,7 @@ import { motion } from 'framer-motion';
  * 2. Service Links: navigation to service pages
  * 3. Contact Information: phone, email, service areas
  * 4. Copyright and Legal Links
+ * 5. Tagline: design and development credit
  */
 
 export const Footer: React.FC = () => {
@@ -111,7 +112,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* EDITABLE: Footer Bottom Section - Copyright and legal links */}
+        {/* EDITABLE: Footer Bottom Section - Copyright, legal links, and tagline */}
         <div className="border-t border-gray-600 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* EDITABLE: Copyright Notice */}
@@ -130,6 +131,20 @@ export const Footer: React.FC = () => {
                 Medical Disclaimer
               </Link>
             </div>
+          </div>
+          {/* EDITABLE: Tagline - Update text or hyperlink */}
+          <div className="mt-4 flex justify-center">
+            <p className="text-gray-400 text-sm">
+              Design & Developed by{' '}
+              <a
+                href="https://udayantra.online/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#1E8449] hover:text-[#2980B9] transition-colors font-bold  text-md"
+              >
+                Uday Kiran Palepu
+              </a>
+            </p>
           </div>
         </div>
       </div>
