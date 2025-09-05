@@ -29,9 +29,9 @@ export const Header: React.FC = () => {
   /* EDITABLE: Navigation Items - UPDATED: Removed Services dropdown, added direct service links */
   const navigationItems = [
     { name: 'Home', path: '/', icon: null }, /* EDITABLE: Home page link */
-    { name: 'ABG', path: '/abg', icon: Activity }, /* EDITABLE: ABG service page link */
-    // { name: 'ECG', path: '/ecg', icon: Heart }, /* EDITABLE: ECG service page link */
-    // { name: 'X-Ray', path: '/xray', icon: Zap }, /* EDITABLE: X-Ray service page link */
+    // { name: 'ABG', path: '/abg', icon: Activity }, /* EDITABLE: ABG service page link */
+    { name: 'X-Ray', path: '/xray', icon: Zap }, /* EDITABLE: X-Ray service page link */
+    { name: 'ECG', path: '/ecg', icon: Heart }, /* EDITABLE: ECG service page link */
     { name: 'Contact', path: '/contact', icon: null } /* EDITABLE: Contact page link */
   ];
 
