@@ -89,13 +89,13 @@ export const HomePage: React.FC = () => {
     <div className="font-sans">
       {/* EDITABLE: Hero Section - Main landing page banner */}
       <Hero
-        title="Hyderabad's First At-Home X-Ray & ECG Testing" /* EDITABLE: Main hero title */
+        title="Hyderabad's First At-Home ABG(Arterial Blood Gas) Testing" /* EDITABLE: Main hero title */
         subtitle="Fast, accurate diagnostic reports delivered to your doorstep within minutes" /* EDITABLE: Hero subtitle */
         showTrustBadges={true}
         backgroundImage="https://raw.githubusercontent.com/uday-kiran-palepu/Website-Images/refs/heads/main/Abg-services%20-Images/herosection-3-3.jpg" /* EDITABLE: Hero background image */
       />
 
-      {/* NEW: Why ABG Testing Section - Information about ABG testing */}
+     {/* NEW: Why ABG Testing Section - Information about ABG testing */}
       <section className="py-16 sm:py-20 bg-qpath-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection animation="fade-up">
@@ -106,7 +106,7 @@ export const HomePage: React.FC = () => {
                 transition={{ duration: 0.6 }}
                 className="text-2.5xl sm:text-3.6xl md:text-5xl font-bold text-qpath-text mb-4"
               >
-                Why X-Ray Testing
+                Why ABG Testing
               </motion.h2>
             </div>
             <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
@@ -117,7 +117,7 @@ export const HomePage: React.FC = () => {
                 transition={{ duration: 0.6 }}
               >
                 <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
-                  An X-ray is fundamental for diagnosing issues within the chest and skeletal system. For patients with fractures, severe respiratory distress, or mobility limitations, traveling to a radiology center is not just difficult—it can be painful and risky, potentially worsening their condition. Our portable, low-radiation digital X-ray service solves this problem by providing high-quality imaging for chest infections like pneumonia, bone fractures, and post-operative evaluations in the comfort and safety of your own home. This ensures you get the necessary diagnostics without compromising your recovery.
+                  An Arterial Blood Gas (ABG) test is a blood test that measures the levels of oxygen and carbon dioxide in your arterial blood, as well as your blood's pH balance. The test evaluates how well your lungs are working to deliver oxygen to your body and remove carbon dioxide, providing crucial information for diagnosing and managing respiratory and metabolic conditions. A sample is drawn from an artery, not a vein, to get a more accurate reflection of oxygenation and gas exchange.
                 </p>
                 {/* EDITABLE: Button Container - Adjust flex, gap, or alignment for buttons */}
                 <div className="flex flex-row flex-wrap gap-4 sm:gap-6 justify-center">
@@ -153,7 +153,7 @@ export const HomePage: React.FC = () => {
                 transition={{ duration: 0.6 }}
               >
                 <OptimizedImage
-                  src="https://raw.githubusercontent.com/uday-kiran-palepu/Website-Images/refs/heads/main/Abg-services%20-Images/doctor-with-patient-s-x-ray-film%20(1).jpg" /* EDITABLE: ABG section image */
+                  src="https://raw.githubusercontent.com/uday-kiran-palepu/Website-Images/refs/heads/main/Abg-services%20-Images/homepage-abg-image.jpeg" /* EDITABLE: ABG section image */
                   alt="ABG Testing"
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
                   width={600}
@@ -165,75 +165,7 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* NEW: Why X-Ray Testing Section - Information about X-Ray testing */}
-      <section className="py-16 sm:py-20 bg-qpath-bg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection animation="fade-up">
-            <div className="text-center mb-12 sm:mb-16">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="text-2.5xl sm:text-3.6xl md:text-5xl font-bold text-qpath-text mb-4"
-              >
-                Why ECG Testing
-              </motion.h2>
-            </div>
-            <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-              {/* Left: Image */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                <OptimizedImage
-                  src="https://raw.githubusercontent.com/uday-kiran-palepu/Website-Images/refs/heads/main/Abg-services%20-Images/doctor-typing-laptop%20(1).jpg" /* EDITABLE: X-Ray section image */
-                  alt="X-Ray Testing"
-                  className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
-                  width={600}
-                  height={400}
-                />
-              </motion.div>
-              {/* Right: Content */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
-                  An Electrocardiogram (ECG) is a vital test that records the heart's electrical activity. For elderly patients, individuals with chronic cardiac conditions, or those recovering from surgery, an at-home ECG is crucial. Sudden symptoms like chest pain, dizziness, or palpitations require immediate assessment. Our at-home service provides a rapid, 12-lead ECG without the strain of travel, enabling early detection of arrhythmias, potential heart attacks, and other cardiac issues. This immediate access to data allows your doctor to make faster, more informed decisions about your treatment and care.
-                </p>
-                {/* EDITABLE: Button Container - Adjust flex, gap, or alignment for buttons */}
-                <div className="flex flex-row flex-wrap gap-4 sm:gap-6 justify-center">
-                  <motion.div
-                    whileHover={{ scale: 1.05, y: -3 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="relative overflow-hidden"
-                  >
-                    <Link
-                      to="/contact" /* EDITABLE: Booking page link */
-                      className="bg-qpath-green text-white px-4 sm:px-6 py-3 rounded-lg font-semibold text-sm sm:text-lg shadow-lg hover:shadow-xl transition-shadow duration-300 inline-block"
-                    >
-                      Book Test
-                    </Link>
-                  </motion.div>
-                  <motion.div
-                    whileHover={{ scale: 1.05, y: -3 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <a
-                      href="tel:+918712197228" /* EDITABLE: Call phone number */
-                      className="border-2 border-qpath-green text-qpath-green px-4 sm:px-6 py-3 rounded-lg font-semibold text-sm sm:text-lg hover:bg-qpath-green hover:text-white transition-all duration-300 inline-block"
-                    >
-                      Call: +91 87121 97228
-                    </a>
-                  </motion.div>
-                </div>
-              </motion.div>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+
 
       {/* EDITABLE: Why Choose Us Section - Company benefits and trust signals */}
       <section className="py-16 sm:py-20 bg-qpath-bg">
