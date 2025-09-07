@@ -11,10 +11,10 @@ import {
  * CONTACT PAGE - BOOKING AND CONTACT INFORMATION
  * 
  * EDITABLE SECTIONS:
- * 1. Contact Information: phone numbers, email, service hours
+ * 1. Contact Information: phone numbers, email
  * 2. Form Fields: service types, pricing, form validation
  * 3. Google Sheets Integration: form submission endpoint
- * 4. Emergency Contact: emergency phone numbers and WhatsApp
+ * 4. Image: update image source or styling
  */
 export const ContactPage: React.FC = () => {
   /* EDITABLE: Form State - Add or modify form fields */
@@ -38,8 +38,8 @@ export const ContactPage: React.FC = () => {
     setIsSubmitting(true);
     
     try {
-      // Send form data to Google Sheets via Apps Script web app
-      const response = await fetch('https://script.google.com/macros/s/AKfycbwy0qSAic-KzT1yKvej9RmI4aqFd_5VBgVvhAcwo3sruHL7nDteQTXpJFGvMfDFpjo4sg/exec', {
+      // EDITABLE: Google Apps Script Web App URL - Deployment ID: AKfycbxhogSjsKfOjlKjMnN7as1cNY1EjDS_V1WB64um6fcmxXFaavfSkqhh-V-ojAcFtDSFaQ
+      const response = await fetch('https://script.google.com/macros/s/AKfycbxhogSjsKfOjlKjMnN7as1cNY1EjDS_V1WB64um6fcmxXFaavfSkqhh-V-ojAcFtDSFaQ/exec', {
         method: 'POST',
         mode: 'no-cors',  // Required for Google Apps Script
         headers: {
@@ -55,6 +55,7 @@ export const ContactPage: React.FC = () => {
       });
     } catch (error) {
       console.error('Form submission error:', error);
+      alert('Submission failed: ' + error.message); // Show error to user
     } finally {
       setIsSubmitting(false);
     }
@@ -75,7 +76,7 @@ export const ContactPage: React.FC = () => {
           <motion.div 
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6, type: "spring", stiffness: 300 }}
+            transition={{ duration: 0.3, type: "spring", stiffness: 300 }}
             className="bg-white p-8 rounded-2xl shadow-lg"
           >
             <motion.div 
@@ -138,14 +139,14 @@ export const ContactPage: React.FC = () => {
 
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Contact Cards - Displayed side by side with consistent size */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          {/* Contact Card and Image - Centered */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 mx-auto max-w-2xl justify-center">
             {/* Quick Contact Card */}
             <AnimatedSection animation="zoom-in">
               <motion.div 
                 whileHover={{ scale: 1.02, rotateY: 2 }}
                 transition={{ duration: 0.3 }}
-                className="bg-gradient-to-br from-[#1E8449] to-[#2980B9] p-8 rounded-2xl text-white relative overflow-hidden flex flex-col h-full min-h-[300px]"
+                className="bg-gradient-to-br from-[#1E8449] to-[#2980B9] p-4 rounded-2xl text-white relative overflow-hidden flex flex-col h-fit w-full"
               >
                 <motion.div
                   className="absolute inset-0 opacity-10"
@@ -158,89 +159,44 @@ export const ContactPage: React.FC = () => {
                     backgroundSize: '20px 20px'
                   }}
                 />
-                <h3 className="text-2xl font-bold mb-6 relative z-10">Quick Contact</h3>
-                <div className="space-y-4 relative z-10 flex-1 flex flex-col justify-between">
+                <h3 className="text-lg font-bold mb-3 relative z-10">Quick Contact</h3>
+                <div className="space-y-2 relative z-10 flex-1 flex flex-col justify-between">
                   <motion.a
                     whileHover={{ x: 5, scale: 1.02 }}
                     transition={{ duration: 0.2 }}
                     href="tel:+918712197228"
-                    className="flex items-center space-x-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300"
+                    className="flex items-center space-x-2 p-2 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300"
                   >
-                    <Phone className="w-6 h-6" />
+                    <Phone className="w-4 h-4" />
                     <div>
-                      <div className="font-medium">Call Now</div>
-                      <div className="text-sm text-green-100">+91 87121 97228</div>
+                      <div className="font-medium text-sm">Call Now</div>
+                      <div className="text-xs text-green-100">+91 87121 97228</div>
                     </div>
                   </motion.a>
                   <motion.a
                     whileHover={{ x: 5, scale: 1.02 }}
                     transition={{ duration: 0.2 }}
                     href="https://wa.me/918712197228"
-                    className="flex items-center space-x-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300"
+                    className="flex items-center space-x-2 p-2 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300"
                   >
-                    <MessageCircle className="w-6 h-6" />
+                    <MessageCircle className="w-4 h-4" />
                     <div>
-                      <div className="font-medium">WhatsApp</div>
-                      <div className="text-sm text-green-100">Instant response</div>
+                      <div className="font-medium text-sm">WhatsApp</div>
+                      <div className="text-xs text-green-100">Instant response</div>
                     </div>
                   </motion.a>
                 </div>
               </motion.div>
             </AnimatedSection>
 
-            {/* Emergency Contact Card */}
+            {/* Service Image */}
             <AnimatedSection animation="zoom-in" delay={200}>
-              <motion.div 
-                whileHover={{ scale: 1.02, rotateY: 2 }}
-                transition={{ duration: 0.3 }}
-                className="bg-red-50 border border-red-200 p-8 rounded-2xl flex flex-col h-full min-h-[300px]"
-              >
-                <h4 className="text-xl font-bold text-red-800 mb-4 flex items-center space-x-2">
-                  <Phone className="w-6 h-6" />
-                  <span>Emergency Contact</span>
-                </h4>
-                <div className="flex-1 flex flex-col justify-between">
-                  <p className="text-red-700 mb-4">
-                    For urgent diagnostic requirements, call us immediately. Our emergency team is available 24/7.
-                  </p>
-                  <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    href="tel:+918712197228"
-                    className="bg-red-600 text-white py-3 px-6 rounded-lg hover:bg-red-700 transition-all duration-300 font-medium hover:shadow-lg mt-auto"
-                  >
-                    Emergency: +91 87121 97228
-                  </motion.a>
-                </div>
-              </motion.div>
-            </AnimatedSection>
-
-            {/* Service Hours Card */}
-            <AnimatedSection animation="zoom-in" delay={400}>
-              <motion.div 
-                whileHover={{ scale: 1.02, rotateY: 2 }}
-                transition={{ duration: 0.3 }}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full min-h-[300px]"
-              >
-                <h4 className="text-xl font-bold text-[#34495E] mb-4 flex items-center space-x-2">
-                  <Clock className="w-6 h-6 text-[#1E8449]" />
-                  <span>Service Hours</span>
-                </h4>
-                <div className="space-y-3 flex-1 flex flex-col justify-between">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600">Regular Service</span>
-                    <span className="font-medium text-[#34495E]">6 AM - 10 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="text-gray-600">Emergency Service</span>
-                    <span className="font-medium text-[#1E8449]">24/7 Available</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-600">Response Time</span>
-                    <span className="font-medium text-[#2980B9]">Within 15 minutes</span>
-                  </div>
-                </div>
-              </motion.div>
+              {/* EDITABLE: Adjust image size by modifying 'h-[80px]' (height) or adding 'w-[Xpx]' for width. Use 'object-contain' or 'object-cover' to control scaling. Add 'max-h-[Xpx]' or 'max-w-[Xpx]' to limit dimensions. Wrap in a div for additional styling (e.g., borders, shadows). */}
+              <img
+                src="https://raw.githubusercontent.com/uday-kiran-palepu/Website-Images/refs/heads/main/Abg-services%20-Images/service-image.png"
+                alt="24-Hour Service"
+                className="h-[200px] max-w-full object-contain mx-auto"
+              />
             </AnimatedSection>
           </div>
 
@@ -341,8 +297,8 @@ export const ContactPage: React.FC = () => {
                       <div>
                         <div className="font-semibold text-[#34495E]">Service Hours</div>
                         <div className="text-sm text-gray-600">
-                          24/7 Emergency Service<br />
-                          Regular Hours: 6 AM - 10 PM
+                          24/7 Service<br />
+                          At your Doorstep
                         </div>
                       </div>
                     </motion.div>

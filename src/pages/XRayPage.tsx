@@ -78,10 +78,10 @@ export const XRayPage: React.FC = () => {
         {/* EDITABLE: ServiceHero Section - Main hero banner with call-to-action buttons */}
         <ServiceHero
           title="X-Ray at Your Doorstep" /* EDITABLE: Main page title */
-          subtitle="Professional digital X-ray imaging in the comfort of your home. Safe, quick, and convenient diagnostic service." /* EDITABLE: Page description */
+          subtitle="Professional digital X-ray with a Radiologist report in the comfort of your home. Safe, quick, and convenient diagnostic service." /* EDITABLE: Page description */
           backgroundImage="https://raw.githubusercontent.com/uday-kiran-palepu/Website-Images/refs/heads/main/Abg-services%20-Images/herosection-2-2.jpg" /* EDITABLE: Hero background image URL */
           price="₹1499" /* EDITABLE: Service price display */
-          ctaText="Book X-Ray" /* EDITABLE: Call-to-action button text */
+          ctaText="Starts at" /* EDITABLE: Call-to-action button text */
           buttonGap="gap-4 sm:gap-6 md:gap-8" /* EDITABLE: Button spacing */
         />
 
@@ -95,7 +95,7 @@ export const XRayPage: React.FC = () => {
                     Understanding X-Ray Imaging
                   </h2>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    X-ray is a non-invasive imaging technique that uses low-dose radiation to create images of bones, organs, and tissues. 
+                    <span className="border-b-2 border-red-500 inline-block">X-ray with a Radiologist report</span> is a non-invasive imaging technique that uses low-dose radiation to create images of bones, organs, and tissues. 
                     It helps diagnose fractures, infections, and other conditions quickly and accurately.
                   </p>
                   <motion.div 
@@ -120,7 +120,7 @@ export const XRayPage: React.FC = () => {
                   {/* EDITABLE: View Sample Report Button - Update href to change link, text for button label */}
                   <div className="flex justify-center mt-8">
                     <motion.a
-                      href="https://drive.google.com/file/d/1m0aQA2_nGrJkp4TFI-snINHRcptMbHfe/view?usp=drive_link"
+                      href="https://drive.google.com/drive/folders/1JccyBSYaDBoQJBzdeMnkTl0f2heBuxGf?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05, y: -2 }}
@@ -236,7 +236,7 @@ export const XRayPage: React.FC = () => {
                     Common Conditions We Image
                   </h2>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    Our at-home X-ray service helps diagnose various conditions promptly, 
+                    Our <span className="border-b-2 border-red-500 inline-block">at-home X-ray with a Radiologist test</span> service helps diagnose various conditions promptly, 
                     enabling faster treatment and recovery.
                   </p>
                   <div className="space-y-3">
@@ -266,7 +266,7 @@ export const XRayPage: React.FC = () => {
                   <h3 className="text-2xl font-bold text-[#34495E] mb-6">Pricing & Information</h3>
                   <div className="space-y-4 mb-6">
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                      <span className="text-gray-600">X-Ray at Home From</span>
+                      <span className="text-gray-600">X-Ray at Home Starts at</span>
                       <motion.span 
                         animate={{ scale: [1, 1.05, 1] }}
                         transition={{ duration: 2, repeat: Infinity }}
@@ -277,7 +277,7 @@ export const XRayPage: React.FC = () => {
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="text-gray-600">Report Delivery</span>
-                      <span className="text-[#34495E] font-medium">Within 2-4 hours</span> {/* EDITABLE: Report delivery time */}
+                      <span className="text-[#34495E] font-medium">Fast Delivery</span> {/* EDITABLE: Report delivery time */}
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="text-gray-600">Service Hours</span>
@@ -322,7 +322,7 @@ export const XRayPage: React.FC = () => {
                 Schedule Your Home X-Ray Today
               </h2>
               <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-                Safe, professional X-ray imaging at your doorstep for accurate diagnosis
+                Safe, professional X-ray with a Radiologist imaging at your doorstep for accurate diagnosis
               </p>
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
                 <Link
@@ -335,7 +335,7 @@ export const XRayPage: React.FC = () => {
                   href="tel:+918712197228" /* EDITABLE: Emergency phone number */
                   className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-white hover:text-[#2980B9] transition-all duration-300 font-semibold text-base sm:text-lg w-full sm:w-auto text-center"
                 >
-                  Call: +91 87121 97228
+                  Contact: +91 8712197228
                 </a>
               </div>
               <motion.div

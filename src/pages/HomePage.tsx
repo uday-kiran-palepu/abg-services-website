@@ -35,8 +35,7 @@ export const HomePage: React.FC = () => {
     { icon: CheckCircle, title: "Associated Labs", desc: "ICMR, NABL & CAP accredited" }
   ];
 
-  /* EDITABLE: Services Overview Data - Main diagnostic services offered */
-  const services = [
+   const services = [
     {
       id: 'abg',
       title: 'ABG Test',
@@ -49,7 +48,7 @@ export const HomePage: React.FC = () => {
     {
       id: 'ecg',
       title: 'ECG Test',
-      description: 'Electrocardiogram testing for heart health monitoring. Painless procedure perfect for elderly and immobile patients.',
+      description: 'A 12-Channel ECG(Electrocardiogram) with a Cardiologist testing for heart health monitoring. Painless procedure perfect for elderly and immobile patients.',
       image: 'https://raw.githubusercontent.com/uday-kiran-palepu/Website-Images/refs/heads/main/Abg-services%20-Images/ecg-test-image-1.jpg', /* EDITABLE: ECG service image */
       icon: Heart,
       link: '/ecg', /* EDITABLE: ECG page link */
@@ -58,7 +57,7 @@ export const HomePage: React.FC = () => {
     {
       id: 'xray',
       title: 'X-Ray Services',
-      description: 'Portable digital X-Ray imaging for chest, bone, and joint examinations. Low-radiation safety standards.',
+      description: 'Advanced digital X-ray with a Radiologist imaging for chest, bone, and joint examinations. Low-radiation safety standards.',
       image: 'https://images.pexels.com/photos/4225922/pexels-photo-4225922.jpeg', /* EDITABLE: X-Ray service image */
       icon: Zap,
       link: '/xray', /* EDITABLE: X-Ray page link */
@@ -117,7 +116,7 @@ export const HomePage: React.FC = () => {
                 transition={{ duration: 0.6 }}
               >
                 <p className="text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
-                  An Arterial Blood Gas (ABG) test is a blood test that measures the levels of oxygen and carbon dioxide in your arterial blood, as well as your blood's pH balance. The test evaluates how well your lungs are working to deliver oxygen to your body and remove carbon dioxide, providing crucial information for diagnosing and managing respiratory and metabolic conditions. A sample is drawn from an artery, not a vein, to get a more accurate reflection of oxygenation and gas exchange.
+                    Get an immediate, accurate <span className="border-b-2 border-red-500 inline-block">Arterial Blood Gas (ABG) test</span> right in your home, with results in less than a minute. An ABG test is a crucial blood test that checks oxygen levels and your body's pH balance, giving doctors vital information for conditions like COPD or other breathing difficulties. Our real-time testing eliminates the stressful delays and lab runs that can affect results. This "sample to solution" approach means your doctor gets the critical information they need instantly, allowing for faster and more effective care when it matters most.
                 </p>
                 {/* EDITABLE: Button Container - Adjust flex, gap, or alignment for buttons */}
                 <div className="flex flex-row flex-wrap gap-4 sm:gap-6 justify-center">
@@ -530,7 +529,7 @@ export const HomePage: React.FC = () => {
                   href="tel:+918712197228" /* EDITABLE: Emergency phone link */
                   className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-white hover:text-qpath-green transition-all duration-300 font-semibold text-base sm:text-lg w-full sm:w-auto text-center"
                 >
-                  Call: +91 87121 97228 {/* EDITABLE: Display phone number */}
+                  Contact: +91 8712197228 {/* EDITABLE: Display phone number */}
                 </a>
               </motion.div>
             </motion.div>

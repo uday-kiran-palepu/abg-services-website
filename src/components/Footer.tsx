@@ -63,10 +63,10 @@ export const Footer: React.FC = () => {
                 ABG Test - Arterial Blood Gas Analysis
               </Link>
               <Link to="/ecg" className="block text-gray-300 hover:text-[#1E8449] transition-colors">
-                ECG Test - Electrocardiogram
+                ECG Test - 12 Channel Electrocardiogram
               </Link>
               <Link to="/xray" className="block text-gray-300 hover:text-[#1E8449] transition-colors">
-                X-Ray - Digital X-Ray Services
+                X-Ray - Digital X-Ray with Radiologist Services
               </Link>
               <Link to="/contact" className="block text-gray-300 hover:text-[#1E8449] transition-colors">
                 Book a Test Now
@@ -85,7 +85,7 @@ export const Footer: React.FC = () => {
                   <a href="tel:+918712197228" className="text-gray-300 hover:text-white transition-colors">
                     +91 87121 97228
                   </a>
-                  <div className="text-sm text-gray-400">24/7 Emergency Service</div>
+                  <div className="text-sm text-gray-400">24/7 Service</div>
                 </div>
               </div>
               

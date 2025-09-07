@@ -45,7 +45,7 @@ export const ECGPage: React.FC = () => {
   /* EDITABLE: Benefits Section Data - Modify icons, titles, and descriptions */
   const benefits = [
     { icon: Home, title: "Home Comfort", desc: "ECG testing in the comfort of your home" },
-    { icon: Clock, title: "Quick Results", desc: "Digital reports delivered within minutes" },
+    { icon: Clock, title: "Quick Results", desc: "Digital reports with fast delivery" },
     { icon: Users, title: "Expert Technicians", desc: "Certified professionals with 15+ years experience" },
     { icon: Shield, title: "Safety First", desc: "Non-invasive procedure with strict hygiene protocols" }
   ];
@@ -66,7 +66,7 @@ export const ECGPage: React.FC = () => {
     "Non-invasive ECG recording with latest device",
     "Real-time heart activity monitoring",
     "Immediate analysis with advanced software",
-    "Digital report generation and delivery"
+    "Quick reports generation and fast delivery"
   ];
 
   return (
@@ -75,10 +75,10 @@ export const ECGPage: React.FC = () => {
         {/* EDITABLE: ServiceHero Section - Main hero banner with call-to-action buttons */}
         <ServiceHero
           title="ECG Test at Home" /* EDITABLE: Main page title */
-          subtitle="Professional Electrocardiogram testing in the comfort of your home. Painless, fast, and safe heart health monitoring." /* EDITABLE: Page description */
+          subtitle="Professional 12-Channel ECG(Electrocardiogram) with a Cardiologist testing in the comfort of your home. Painless, fast, and safe heart health monitoring." /* EDITABLE: Page description */
           backgroundImage="https://raw.githubusercontent.com/uday-kiran-palepu/Website-Images/refs/heads/main/Abg-services%20-Images/herosection-1-1.jpg" /* EDITABLE: Hero background image URL */
           price="₹1499" /* EDITABLE: Service price display */
-          ctaText="Book ECG Test" /* EDITABLE: Call-to-action button text */
+          ctaText="Starts at" /* EDITABLE: Call-to-action button text */
           buttonGap="gap-4 sm:gap-6 md:gap-8" /* EDITABLE: Button spacing */
         />
 
@@ -92,7 +92,7 @@ export const ECGPage: React.FC = () => {
                     Understanding ECG Tests
                   </h2>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    An Electrocardiogram (ECG) test records the electrical activity of your heart to assess its rhythm and function. 
+                    <span className="border-b-2 border-red-500 inline-block">An 12-Channel ECG(Electrocardiogram) with a Cardiologist</span> test records the electrical activity of your heart to assess its rhythm and function. 
                     This non-invasive test is critical for diagnosing heart conditions and monitoring cardiac health.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
@@ -231,7 +231,7 @@ export const ECGPage: React.FC = () => {
                     Who Needs ECG Testing?
                   </h2>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    ECG testing is essential for patients with heart-related conditions or those requiring cardiac monitoring.
+                    <span className="border-b-2 border-red-500 inline-block">ECG(Electrocardiogram) with a Cardiologist testing</span> is essential for patients with heart-related conditions or those requiring cardiac monitoring.
                   </p>
                   <div className="space-y-3">
                     {whoNeedsECG.map((condition, index) => (
@@ -260,7 +260,7 @@ export const ECGPage: React.FC = () => {
                   <h3 className="text-2xl font-bold text-[#34495E] mb-6">Pricing & Information</h3>
                   <div className="space-y-4 mb-6">
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                      <span className="text-gray-600">ECG Test at Home From</span>
+                      <span className="text-gray-600">ECG at Home Starts at</span>
                       <motion.span 
                         animate={{ scale: [1, 1.05, 1] }}
                         transition={{ duration: 2, repeat: Infinity }}
@@ -271,7 +271,7 @@ export const ECGPage: React.FC = () => {
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="text-gray-600">Report Delivery</span>
-                      <span className="text-[#34495E] font-medium">Within Minutes</span> {/* EDITABLE: Report delivery time */}
+                      <span className="text-[#34495E] font-medium">Fast Delivery</span> {/* EDITABLE: Report delivery time */}
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="text-gray-600">Service Hours</span>
@@ -330,7 +330,7 @@ export const ECGPage: React.FC = () => {
                   href="tel:+918712197228" /* EDITABLE: Emergency phone number */
                   className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-white hover:text-[#2980B9] transition-all duration-300 font-semibold text-base sm:text-lg w-full sm:w-auto text-center"
                 >
-                  Call: +91 87121 97228
+                  Contact: +91 8712197228
                 </a>
               </div>
               <motion.div

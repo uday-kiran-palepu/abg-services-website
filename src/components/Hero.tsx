@@ -91,7 +91,13 @@ export const Hero: React.FC<HeroProps> = ({
             to="/xray" /* EDITABLE: Learn more page link */
             className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-qpath-text transition-all"
           >
-            About ABG
+            About X-Ray
+          </Link>
+           <Link
+            to="/ecg" /* EDITABLE: Learn more page link */
+            className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-qpath-text transition-all"
+          >
+           About ECG
           </Link>
         </motion.div>
         {showTrustBadges && (
@@ -103,7 +109,7 @@ export const Hero: React.FC<HeroProps> = ({
           >
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2" />
-              <span>ICMR Associated</span>
+              <span>NABL, CAP & ICMR Associated</span>
             </div>
             <div className="flex items-center">
               <CheckCircle className="w-4 h-4 mr-2" />
@@ -125,7 +131,7 @@ export const Hero: React.FC<HeroProps> = ({
             href="tel:+918712197228" /* EDITABLE: Call phone number */
             className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-qpath-text transition-all inline-block"
           >
-            Call: +91 87121 97228
+            Contact: +91 8712197228
           </a>
         </motion.div>
       </div>

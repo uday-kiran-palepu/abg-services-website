@@ -79,7 +79,7 @@ export const ABGPage: React.FC = () => {
           subtitle="Professional Arterial Blood Gas analysis in the comfort of your home. Expert technicians, instant results, complete safety." /* EDITABLE: Page description */
           backgroundImage="https://raw.githubusercontent.com/uday-kiran-palepu/Website-Images/refs/heads/main/Abg-services%20-Images/herosection-3-3.jpg" /* EDITABLE: Hero background image URL */
           price="₹1499" /* EDITABLE: Service price display */
-          ctaText="Book ABG Test" /* EDITABLE: Call-to-action button text */
+          ctaText="Starts at" /* EDITABLE: Call-to-action button text */
           buttonGap="gap-4 sm:gap-6 md:gap-8" /* EDITABLE: Button spacing */
         />
 
@@ -93,7 +93,7 @@ export const ABGPage: React.FC = () => {
                     Understanding ABG Tests
                   </h2>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    An Arterial Blood Gas (ABG) test measures oxygen, carbon dioxide, and pH levels in your blood. 
+                    An <span className="border-b-2 border-red-500 inline-block">Arterial Blood Gas (ABG) testing</span> measures oxygen, carbon dioxide, and pH levels in your blood. 
                     This critical diagnostic tool helps assess lung function, kidney function, and overall metabolic status.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
@@ -231,7 +231,7 @@ export const ABGPage: React.FC = () => {
                     Who Needs ABG Testing?
                   </h2>
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    ABG testing is essential for patients with various medical conditions requiring 
+                    <span className="border-b-2 border-red-500 inline-block">Arterial Blood Gas (ABG) testing</span> is essential for patients with various medical conditions requiring 
                     precise monitoring of blood gases and acid-base balance.
                   </p>
                   <div className="space-y-3">
@@ -261,7 +261,7 @@ export const ABGPage: React.FC = () => {
                   <h3 className="text-2xl font-bold text-[#34495E] mb-6">Pricing & Information</h3>
                   <div className="space-y-4 mb-6">
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                      <span className="text-gray-600">ABG Test at Home from</span>
+                      <span className="text-gray-600">ABG Test at Home Starts at</span>
                       <motion.span 
                         animate={{ scale: [1, 1.05, 1] }}
                         transition={{ duration: 2, repeat: Infinity }}
@@ -272,7 +272,7 @@ export const ABGPage: React.FC = () => {
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="text-gray-600">Report Delivery</span>
-                      <span className="text-[#34495E] font-medium">2-5 minutes</span>
+                      <span className="text-[#34495E] font-medium">2 minutes</span>
                     </div>
                     <div className="flex justify-between items-center py-2 border-b border-gray-100">
                       <span className="text-gray-600">Service Hours</span>
@@ -329,7 +329,7 @@ export const ABGPage: React.FC = () => {
                   href="tel:+918712197228"
                   className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-white hover:text-[#2980B9] transition-all duration-300 font-semibold text-base sm:text-lg w-full sm:w-auto text-center"
                 >
-                  Call: +91 87121 97228
+                  Contact: +91 8712197228
                 </a>
               </div>
               <motion.div

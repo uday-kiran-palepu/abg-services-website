@@ -155,7 +155,7 @@ export const ServiceHero: React.FC<ServiceHeroProps> = ({
                 href="tel:+918712197228" /* EDITABLE: Phone number link - update to change contact number */
                 className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-white hover:text-[#34495E] transition-all duration-300 font-semibold text-base sm:text-lg backdrop-blur-sm inline-block text-center w-full sm:w-auto"
               >
-                Emergency: +91 87121 97228 {/* EDITABLE: Display phone number - update to match href above */}
+                Contact: +91 8712197228 {/* EDITABLE: Display phone number - update to match href above */}
               </a>
             </motion.div>
           </motion.div>
