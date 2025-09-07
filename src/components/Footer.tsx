@@ -44,13 +44,13 @@ export const Footer: React.FC = () => {
             {/* EDITABLE: Company Description */}
             <p className="text-gray-300 leading-relaxed">
               Hyderabad's first at-home diagnostic service provider offering ABG, ECG, and X-Ray tests. 
-              Professional, certified, and trusted healthcare at your doorstep.
+              Professional NABL, CAP & ICMR Associated, and trusted healthcare at your doorstep.
             </p>
             {/* EDITABLE: Certification Badges */}
             <div className="flex space-x-2">
-              <span className="bg-[#1E8449] text-xs px-3 py-1 rounded-full">ICMR Certified</span>
-              <span className="bg-[#2980B9] text-xs px-3 py-1 rounded-full">NABL Certified</span>
-              <span className="bg-gray-600 text-xs px-3 py-1 rounded-full">CAP Certified</span>
+              <span className="bg-[#1E8449] text-xs px-3 py-1 rounded-full">ICMR Associated</span>
+              <span className="bg-[#2980B9] text-xs px-3 py-1 rounded-full">NABL Associated</span>
+              <span className="bg-gray-600 text-xs px-3 py-1 rounded-full">CAP Associated</span>
             </div>
           </div>
 
