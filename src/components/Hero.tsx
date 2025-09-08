@@ -88,16 +88,10 @@ export const Hero: React.FC<HeroProps> = ({
             Book Your Test
           </Link>
           <Link
-            to="/xray" /* EDITABLE: Learn more page link */
+            to="/abg" /* EDITABLE: Learn more page link */
             className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-qpath-text transition-all"
           >
-            About X-Ray
-          </Link>
-           <Link
-            to="/ecg" /* EDITABLE: Learn more page link */
-            className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg hover:bg-white hover:text-qpath-text transition-all"
-          >
-           About ECG
+            About ABG
           </Link>
         </motion.div>
         {showTrustBadges && (
